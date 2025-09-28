@@ -66,10 +66,19 @@ header {
   margin-right: 20px;
   color: var(--white);
 }
+.hamburger-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .hamburger-icon {
+    display: flex; /* show on mobile */
+  }
+
   .nav-menu {
-    display: none;
+    display: flex;
     flex-direction: column;
+    cursor: pointer;
     position: absolute;
     top: 60px;
     right: 0;
@@ -85,6 +94,7 @@ header {
     display: flex;
   }
 }
+
 section {
   padding: 20px;
   background-color: var(--white);
@@ -102,37 +112,68 @@ section {
 }
 .btn-primary:hover {
   background-color: var(--action);
-  colour: var(--dark);
+  color: var(--dark);
 }
 /*.contact-form */
 .contact-form {
+  background-color: var(--white);
   padding: 48px 16 px;
   border-radius: 10px;
-  margin: 5px 10px;
+  margin: 40px auto;
 }
 
-.contact-form input,
-.contact-form select {
+.contact-form input {
+  background-color: var(--white);
   display: block;
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
 }
 
+.contact-form select {
+  background-color: #f3eeee;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
 .contact-form textarea {
+  background-color: var(--white);
   display: block;
   width: 100%;
   padding: 8px;
 }
-.contact-form button {
+
+footer {
+  text-align: center;
+  padding: 10px;
   background-color: var(--brand);
   color: var(--white);
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
 }
-..profile img {
+.footer-content {
+  margin: auto;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-link:hover {
+  color: var(--action);
+}
+footer p {
+  margin: 10px 0 0;
+  font-size: 0.9em;
+}
+
+.profile img {
   border-radius: 50%;
   max-width: 150px;
   margin-bottom: 10px;
