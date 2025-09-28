@@ -1,0 +1,147 @@
+:root {
+  --brand: #380310;
+  --action: #f39c12;
+  --white: white;
+  --dark: black;
+  --grey: #a8a0a0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--grey);
+  color: var(--dark);
+}
+
+header {
+  background-color: var(--brand);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+.logo {
+  color: var(--white);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+.name {
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-menu a:hover {
+  color: var(--action);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+  color: var(--white);
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--brand);
+    width: 100%;
+    text-align: right;
+    padding: 10px 0;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+section {
+  padding: 20px;
+  background-color: var(--white);
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+  background-color: var(--brand);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: var(--action);
+  colour: var(--dark);
+}
+/*.contact-form */
+.contact-form {
+  padding: 48px 16 px;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+
+.contact-form input,
+.contact-form select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+}
+.contact-form button {
+  background-color: var(--brand);
+  color: var(--white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+..profile img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.profile {
+  text-align: center;
+}
+
+.profile h1 {
+  margin-top: 10px;
+  font-size: 1.8em;
+}
