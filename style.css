@@ -212,8 +212,8 @@ footer p {
 }
 
 .footer-icon {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   transition: 0.2s ease;
 }
