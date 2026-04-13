@@ -8,27 +8,37 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+</script>
+
 <body>
 
 <!-- Header -->
 <header class="header">
     <div class="mobile-header">
-      <div class="hamburger-icon">
+      <div class="hamburger-icon" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
+      <div class="mobile-logo">Mahounda Poinsonnet</div>
     </div>
 
-    <nav class="nav">
-      <ul class="nav-menu">
-        <li class="logo">Mahounda Poinsonnet</li>
-        <li><a href="./about_me.html">About Me</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <nav class="nav" id="navMenu">
+    <ul class="nav-menu">
+      <li class="logo desktop-logo">Mahounda Poinsonnet</li>
+      <li><a href="./about_me.html">About Me</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
 <!-- Profile -->
   <section class="profile">
