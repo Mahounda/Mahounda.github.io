@@ -1,20 +1,22 @@
-<!-- Contact Section -->
 <section class="contact-section">
-    <h1>Curious to explore my journey?</h1>
+  <h1>Curious to explore my journey?</h1>
+  <p class="contact-intro">
+    I’d love to connect — whether you're exploring collaboration, opportunities, or simply want to say hello.
+  </p>
 
-    <form class="contact-form">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" />
+  <form class="contact-form">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
 
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" />
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="yourname@example.com" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" rows="4"></textarea>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-      <input type="submit" value="Embark" class="btn-primary" />
-    </form>
-  </section>
+    <button type="submit" class="btn-primary">Embark</button>
+  </form>
+</section>

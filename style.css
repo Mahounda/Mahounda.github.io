@@ -78,29 +78,25 @@ body {
   color: var(--action);
 }
 
+/* MOBILE HEADER */
 @media (max-width: 768px) {
-  /* Hide desktop logo */
   .desktop-logo {
     display: none;
   }
 
-  /* Show mobile header */
   .mobile-header {
     display: flex;
   }
 
-  /* Hide nav by default */
   .nav {
     display: none;
     width: 100%;
   }
 
-  /* Show nav when toggled */
   .nav.open {
     display: block;
   }
 
-  /* Mobile menu layout */
   .nav-menu {
     flex-direction: column;
     background-color: var(--brand);
@@ -108,12 +104,12 @@ body {
     text-align: right;
     gap: 15px;
   }
-
-  /* Show hamburger */
-  .hamburger-icon {
+.hamburger-icon {
     display: flex;
   }
 }
+
+/* Sections */
 
 section {
   padding: 20px;
@@ -122,6 +118,8 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Buttons */
 
 .btn-primary {
   background-color: var(--brand);
@@ -136,6 +134,19 @@ section {
   background-color: var(--action);
   color: var(--dark);
 }
+/* Contact */
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: var(--dark);
+}
 
 .contact-form {
   background-color: var(--white);
@@ -143,29 +154,30 @@ section {
   border-radius: 10px;
   margin: 40px auto;
 }
-.contact-form input {
-  background-color: var(--white);
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
   display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
 }
 
-.contact-form select {
-  background-color: #f3eeee;
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-}
-
+.contact-form input,
 .contact-form textarea {
   background-color: var(--white);
+  border: 1px solid #ccc;
+  border-radius: 5px;
   display: block;
   width: 100%;
   padding: 8px;
+  margin-bottom: 16px;
 }
 
+.contact-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -176,6 +188,7 @@ footer {
   width: 100%;
   margin-top: 20px;
 }
+
 .footer-content {
   margin: auto;
 }
@@ -198,11 +211,14 @@ footer p {
   font-size: 0.9em;
 }
 
+/* Profile */
+
 .profile img {
   border-radius: 50%;
   max-width: 150px;
   margin-bottom: 10px;
 }
+
 .profile {
   text-align: center;
 }
@@ -211,4 +227,3 @@ footer p {
   margin-top: 10px;
   font-size: 1.8em;
 }
-
