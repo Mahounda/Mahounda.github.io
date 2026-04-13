@@ -1,18 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me – Mahounda Poinsonnet</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-</nav>
 
-      <section class="about">
-        <h1>About me</h1>
-        <p>
-        Hi, I'm Mahounda, I'm a Portfolio Advisor, with over 7 years of experience in project coordination and portfolio management. What I like the best in my current role is managing the portfolio financials and reporting activities, I find interesting understanding what’s behind the data and the technology aspect associated with. Prior to this, I have a strong experience as an Admin professional in various sector of activities in France and Australia.
-        </p>
-      </section> 
+<body>
+<!-- HEADER -->
+  <header class="header">
+
+    <!-- MOBILE HEADER -->
+    <div class="mobile-header">
+      <div class="hamburger-icon" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-logo">Mahounda Poinsonnet</div>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="nav" id="navMenu">
+      <ul class="nav-menu">
+        <li class="desktop-logo">Mahounda Poinsonnet</li>
+        <li><a href="./index.html">About Me</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+<!-- ABOUT SECTION -->
+  <section class="profile">
+    <h1>About Me</h1>
+    <img src="Mahounda photo.jpg" alt="Mahounda Poinsonnet" width="150" />
+
+    <p>
+      <strong>Mahounda Poinsonnet</strong> is a Senior Portfolio Coordinator with eight years of experience in fast‑paced technology environments, specialising in financial management, reporting, and governance. She is now transitioning into hybrid PMO, Tech, and Data roles, supported by hands‑on development experience gained through the She Codes program.
+    </p>
+
+    <p>
+      She has built projects using Python, Django, JavaScript, React, HTML, and relational concepts, and naturally stepped into the Project Manager/Scrum Master role during her final group project, guiding her team to deliver a complete application. Mahounda thrives in environments that value curiosity, continuous learning, and collaborative problem‑solving.
+    </p>
+
+    <p>
+      Beyond her technical journey, she is actively engaged in her community — participating in local community dinners, contributing to the French community, and enjoying meaningful family time. Embracing life as an “électron libre,” she brings energy, adaptability, and creativity to every step of her growing career in tech.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>Connect with me:</p>
+      <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">LinkedIn</a>
+      <a href="https://github.com/mahounda" target="_blank" class="social-link">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+    });
+  </script>
+
 </body>
 </html>
+
