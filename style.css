@@ -211,6 +211,19 @@ footer p {
   font-size: 0.9em;
 }
 
+.footer-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+
 /* Profile */
 
 .profile img {
