@@ -4,41 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css"> <!-- your real CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Your normal site header goes here (nav menu) -->
+    <!-- HEADER (unchanged) -->
 
-    <section class="projects-header">
-        <h1>My Projects</h1>
-        <p>A curated selection of my work across tech, PMO, and data.</p>
+    <section class="projects-hero fade-in">
+        <h1>Projects</h1>
+        <p class="subtitle">
+            A curated selection of hands‑on work across PMO, Tech, and Data.
+        </p>
     </section>
 
-    <section class="projects-container">
+    <section class="projects-grid">
 
-    <div class="project-card">
-            <h2>Crowdfunding Platform</h2>
-            <p>A full‑stack crowdfunding platform built with Django, Python, HTML, CSS, and JavaScript. Includes authentication, project creation, pledges, and admin dashboard.</p>
-            <a href="#" class="project-link">View Project</a>
+        <!-- Project 1 -->
+        <div class="project-card slide-up">
+            <img src="images/2gethr.png" alt="2gethR screenshot" class="project-img">
+            <h2>2gethR — Crowdfunding Platform</h2>
+            <p class="project-role">Full‑Stack Developer • Project Lead</p>
+            <p>
+                2gethR is a community‑driven crowdfunding platform connecting university students with isolated seniors.
+                I built the entire application end‑to‑end, including the React front‑end, Django REST API, authentication,
+                fundraiser workflows, and deployment pipelines.
+            </p>
+            <a href="https://crowdfunding2getr.netlify.app/" class="btn" target="_blank">View Project</a>
         </div>
 
-        <div class="project-card">
-            <h2>Portfolio Website</h2>
-            <p>A modern, responsive portfolio built from scratch using HTML, CSS, and JavaScript. Includes About Me, Projects, Timeline, and Contact sections.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h2>Data Dashboard</h2>
-            <p>An interactive dashboard using Python, Pandas, and Power BI to visualise business metrics and support decision‑making.</p>
-            <a href="#" class="project-link">View Project</a>
+        <!-- Project 2 -->
+        <div class="project-card slide-up delay-1">
+            <img src="images/podflow.png" alt="PodFlow screenshot" class="project-img">
+            <h2>PodFlow — Accountability Platform</h2>
+            <p class="project-role">Front‑End & Back‑End Tester • Project Manager • Scrum Master</p>
+            <p>
+                PodFlow is a private accountability platform built around pods, goals, and check‑ins.
+                I contributed as a front‑end and back‑end tester while also leading the team as Project Manager and Scrum Master,
+                ensuring smooth delivery, sprint planning, and workflow alignment.
+            </p>
+            <a href="https://podflowapp.netlify.app/" class="btn" target="_blank">View Project</a>
         </div>
 
     </section>
+    <section class="coming-soon fade-in delay-2">
+        <h3>More Projects Coming Soon</h3>
+        <p>Currently working on new PMO–Tech–Data initiatives.</p>
+    </section>
 
-    <!-- Your footer goes here -->
+    <section class="skills-strip fade-in delay-3">
+        <p>Python • Django • JavaScript • React • HTML • CSS • Databases • PMO Tools</p>
+    </section>
+
+    <!-- FOOTER (icon-ready) -->
+    <footer class="footer fade-in">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="icons/github.svg" alt="GitHub">
+            </a>
+        </div>
+        <p>© 2026 Mahounda Poinsonnet</p>
+    </footer>
 
 </body>
 </html>
