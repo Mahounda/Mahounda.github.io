@@ -566,3 +566,41 @@ footer p {
     opacity: 0.85;
     letter-spacing: 0.5px;
 }
+
+.footer {
+    padding: 40px 0;
+    background: #ffffff; /* white background like the reference */
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-icon:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #333;
+    opacity: 0.7;
+    letter-spacing: 0.3px;
+}
