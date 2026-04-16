@@ -9,23 +9,29 @@
 
 <body>
 
-    <!-- NAV BAR -->
+    <!-- HEADER (same as About Me + Contact) -->
     <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">Mahounda</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
 
-            <!-- Mobile Menu -->
-            <div class="hamburger">
-                <span></span><span></span><span></span>
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header">
+            <div class="hamburger-icon" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="mobile-logo">Mahounda Poinsonnet</div>
+        </div>
+
+      <!-- DESKTOP NAV -->
+        <nav class="nav" id="navMenu">
+            <ul class="nav-menu">
+                <li class="desktop-logo">Mahounda Poinsonnet</li>
+                <li><a href="./index.html">About Me</a></li>
+                <li><a href="./projects.html" class="active">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <!-- PROJECTS HERO -->
@@ -78,7 +84,7 @@
         <p>Python • Django • JavaScript • React • HTML • CSS • Databases • PMO Tools</p>
     </section>
 
-      <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer fade-in">
         <div class="footer-icons">
             <a href="https://www.linkedin.com" target="_blank">
@@ -91,6 +97,17 @@
         <p>© 2026 Mahounda Poinsonnet</p>
     </footer>
 
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+        });
+    </script>
+
 </body>
 </html>
+
 
