@@ -419,7 +419,7 @@ footer p {
   height: 220px;
   object-fit: cover;
   border-radius: 10px;
-  background: var(--grey);
+  background: none;
 }
 
 .project-card h2 {
