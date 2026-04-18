@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Mahounda Poinsonnet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- Header -->
 <header class="header">
 
   <!-- Mobile Header -->
@@ -14,6 +26,7 @@
   <!-- Desktop Navigation -->
   <nav class="nav">
     <ul class="nav-menu">
+      <li><a href="home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -22,81 +35,80 @@
 
 </header>
 
-<!-- Hero -->
-<section class="home-hero">
-  <h1>Mahounda Poinsonnet</h1>
-  <p class="hero-text">
-    Full‑stack developer & project lead with a strong PMO and testing background.
-    I build clean, modern, user‑focused web applications.
-  </p>
+<!-- About -->
+<section class="profile">
+  <h1>About Me</h1>
 
-  <a href="contact.html" class="btn-primary hero-btn">Contact Me</a>
-</section>
-
-<!-- Biography -->
-<section class="home-section">
-  <h2>My Story</h2>
+  <img src="Mahounda photo.jpg" alt="Mahounda Poinsonnet" width="150" />
 
   <p id="bio-short">
-    I’m a full‑stack developer and project lead with a background in PMO, testing, and delivery.
-    I love building modern, user‑focused applications and turning complex ideas into clean,
-    functional solutions. My journey blends tech, leadership, and hands‑on problem‑solving...
+    I’m a Senior Portfolio Coordinator transitioning into hybrid PMO, Tech & Data roles,
+    blending delivery experience with hands‑on full‑stack development skills.
   </p>
 
   <div id="bio-full" class="hidden">
+
     <p>
-<!-- Full bio -->
-Mahounda Poinsonnet is a Senior Portfolio Coordinator with eight years of experience in fast‑paced technology environments, specialising in Financial Management, Reporting, and Governance.
-</p>
+      Mahounda Poinsonnet is a Senior Portfolio Coordinator with eight years of experience in fast‑paced technology environments, specialising in Financial Management, Reporting, and Governance.
+    </p>
 
-<p>
-  She is now transitioning into hybrid PMO, Tech & Data roles, supported by hands‑on development experience gained through the She Codes program. Mahounda has built projects using Python, Django, JavaScript, React, HTML, and relational concepts, and naturally stepped into the Project Manager/Scrum Master role during her final group project, guiding her team to deliver a complete application.
-</p>
+    <p>
+      She is now transitioning into hybrid PMO, Tech & Data roles, supported by hands‑on development experience gained through the She Codes program. Mahounda has built projects using Python, Django, JavaScript, React, HTML, and relational concepts, and naturally stepped into the Project Manager/Scrum Master role during her final group project, guiding her team to deliver a complete application.
+    </p>
 
-<p>
-  She thrives in environments that value curiosity, continuous learning, and collaborative problem‑solving.
-</p>
+    <p>
+      She thrives in environments that value curiosity, continuous learning, and collaborative problem‑solving.
+    </p>
 
-<p>
-  Beyond her technical journey, she is engaged in her community, participating in local community dinners, contributing to the next French Councillor elections, and enjoying meaningful family time.
-</p>
+    <p>
+      Beyond her technical journey, she is engaged in her community, participating in local community dinners, contributing to the next French Councillor elections, and enjoying meaningful family time.
+    </p>
 
-<p>
-  Embracing life as an “électron libre,” she brings energy, adaptability, and creativity to every step of her growing career in tech.
-</p>
-</div>
+    <p>
+      Embracing life as an “électron libre,” she brings energy, adaptability, and creativity to every step of her growing career in tech.
+    </p>
+
+  </div>
 
   <button id="bio-toggle" class="btn-primary">Read More</button>
 </section>
 
-<!-- About Preview -->
-<section class="home-section">
-  <h2>About Me</h2>
-  <p>
-    Curious, structured, and hands‑on — I combine development, testing, and project leadership
-    to build meaningful digital products.
-  </p>
+<!-- Timeline -->
+<section class="timeline">
+  <h1>Career Timeline</h1>
 
-  <a href="about.html" class="btn-primary">View About Page</a>
-</section>
+  <div class="timeline-container">
 
-<!-- Projects Preview -->
-<section class="home-section">
-  <h2>Projects</h2>
-
-  <div class="home-projects">
-    <div class="project-preview-card">
-      <h3>Project 1</h3>
-      <p>A modern web app built with React & Django.</p>
+    <div class="timeline-card">
+      <h2>Portfolio Advisor – TabCorp</h2>
+      <p class="timeline-date">2023 – Present</p>
+      <p>Strategic portfolio support, CAPEX/OPEX planning, forecasting, and alignment with senior leadership.</p>
     </div>
 
-    <div class="project-preview-card">
-      <h3>Project 2</h3>
-      <p>Full‑stack application with API integration.</p>
+    <div class="timeline-card">
+      <h2>Portfolio Coordinator – TabCorp</h2>
+      <p class="timeline-date">2018 – 2023</p>
+      <p>Governance, reporting, and portfolio administration to support effective delivery.</p>
     </div>
+
+    <div class="timeline-card">
+      <h2>Business Administration Specialist – Various companies</h2>
+      <p class="timeline-date">2000 – 2017</p>
+      <p>Administrative and HR coordination, process management, and operational business support.</p>
+    </div>
+
+    <div class="timeline-card">
+      <h2>She Codes Australia</h2>
+      <p class="timeline-date">Sept 2025 – April 2026</p>
+      <p>Completed a six‑month full‑stack development program, building projects across the full development stack.</p>
+    </div>
+
+    <div class="timeline-card">
+      <h2>UQ – Graduate Certificate in Business</h2>
+      <p class="timeline-date">2015</p>
+    </div>
+
   </div>
-
-  <a href="projects.html" class="btn-primary">View All Projects</a>
 </section>
 
 <!-- Footer -->
@@ -120,12 +132,12 @@ Mahounda Poinsonnet is a Senior Portfolio Coordinator with eight years of experi
       </a>
 
     </div>
+
     <p class="footer-text">© 2026 Mahounda Poinsonnet</p>
 
   </div>
 </footer>
 
-<!-- Read More Toggle -->
 <script>
 function toggleMenu() {
   document.querySelector('.nav').classList.toggle('open');
@@ -133,7 +145,6 @@ function toggleMenu() {
 
 document.getElementById("bio-toggle").addEventListener("click", function () {
   const fullBio = document.getElementById("bio-full");
-  const shortBio = document.getElementById("bio-short");
 
   fullBio.classList.toggle("hidden");
 
@@ -144,3 +155,6 @@ document.getElementById("bio-toggle").addEventListener("click", function () {
   }
 });
 </script>
+
+</body>
+</html>
