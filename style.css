@@ -559,21 +559,3 @@ body {
   }
 }
 
-/* Contact Social Icons */
-.contact-socials-large {
-  display: flex;
-  gap: 25px;
-  margin-top: 20px;
-}
-
-.contact-icon svg {
-  width: 40px;
-  height: 40px;
-  color: var(--brand);
-  transition: 0.25s ease;
-}
-
-.contact-icon svg:hover {
-  transform: scale(1.15);
-  color: var(--action);
-}
