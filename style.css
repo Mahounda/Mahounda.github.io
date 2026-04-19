@@ -1,3 +1,6 @@
+body {
+  background: red !important;
+}
 /* Root variables */
 :root {
   --brand: #380310;
