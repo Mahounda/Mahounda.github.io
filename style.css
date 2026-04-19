@@ -56,7 +56,12 @@ body {
   justify-content: center;
 }
 
-/* Desktop nav */
+/* Desktop nav layout */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav a {
   margin-left: 20px;
   color: var(--white);
