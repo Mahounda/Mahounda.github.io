@@ -109,7 +109,7 @@ body {
     background: var(--white);
   }
 
-  /* Show nav when active */
+  /* Show nav when hamburger is clicked */
   .nav.active {
     display: block;
     background: var(--brand);
