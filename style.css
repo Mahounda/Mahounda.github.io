@@ -403,7 +403,6 @@ body {
   border-radius: 50%;
   border: 3px solid var(--white);
   box-shadow: var(--shadow);
-
 }
 
 .timeline-content {
@@ -505,7 +504,8 @@ body {
 }
 
 /* Contact Page */
-max-width: 650px;
+.contact-card {
+  max-width: 650px;
   margin: 0 auto;
   padding: 30px;
   display: flex;
