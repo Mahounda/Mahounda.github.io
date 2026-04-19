@@ -170,8 +170,10 @@ body {
     height: 140px;
   }
 }
+
 /* Hamburger mobile */
- display: none;
+.hamburger-icon {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -196,6 +198,20 @@ body {
     display: block;
     background: var(--brand);
     padding: 20px;
+  }
+}
+
+/* Mobile header mobile version */
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
   }
 }
 
