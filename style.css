@@ -170,6 +170,34 @@ body {
     height: 140px;
   }
 }
+/* Hamburger mobile */
+ display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon span {
+    width: 25px;
+    height: 3px;
+    background: var(--white);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+    background: var(--brand);
+    padding: 20px;
+  }
+}
 
 /* Projects Grid */
 .projects-grid {
