@@ -1,3 +1,9 @@
+.mobile-header {
+  background: blue !important;
+  height: 80px !important;
+  border: 3px solid yellow !important;
+}
+
 /* Root variables */
 :root {
   --brand: #380310;
@@ -45,6 +51,19 @@ body {
 
 /* Desktop logo */
 .logo {
+  background: var(--white);
+  color: var(--brand);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile logo */
+.mobile-logo {
   background: var(--white);
   color: var(--brand);
   width: 40px;
