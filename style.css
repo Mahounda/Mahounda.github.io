@@ -1,9 +1,3 @@
-.mobile-header {
-  background: blue !important;
-  height: 80px !important;
-  border: 3px solid yellow !important;
-}
-
 /* Root variables */
 :root {
   --brand: #380310;
