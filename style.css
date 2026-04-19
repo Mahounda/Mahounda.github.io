@@ -43,6 +43,10 @@ body {
   align-items: center;
 }
 
+/* Hide mobile header on desktop */
+.mobile-header {
+  display: none;
+}
 .logo {
   background: var(--white);
   color: var(--brand);
