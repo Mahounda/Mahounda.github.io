@@ -345,6 +345,11 @@ footer {
   margin-top: auto;
 }
 
+/* Allow content to expand so footer stays at bottom */
+main, section {
+  flex: 1 0 auto;
+}
+
 /* About Page Grid */
 .about-grid {
   display: grid;
