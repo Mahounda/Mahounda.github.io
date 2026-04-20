@@ -276,7 +276,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Footer icons */
+/* Layout */
 .footer-inner {
   display: flex;
   flex-direction: column;
@@ -284,26 +284,51 @@ body {
   gap: 18px;
 }
 
-.footer-icons {
+/* Social icons container */
+.social-icons {
   display: flex;
   gap: 22px;
 }
 
+/* Clickable area */
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* SVG styling */
 .footer-icon svg {
   width: 28px;
   height: 28px;
-  color: var(--white);
+  fill: var(--white);
   transition: 0.25s ease;
+  pointer-events: none; /* ensures click goes to <a> */
 }
 
-.footer-icon svg:hover {
+/* Hover effect */
+.footer-icon:hover svg {
   transform: scale(1.15);
-  color: var(--action);
+  fill: var(--action);
 }
 
+/* Footer text */
 .footer-text {
   font-size: 0.9rem;
   opacity: 0.85;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.social-icons svg {
+  pointer-events: none; /* ensures the click goes to the <a> tag */
 }
 
 /* About Page Grid */
