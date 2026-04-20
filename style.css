@@ -331,6 +331,20 @@ body {
   pointer-events: none; /* ensures the click goes to the <a> tag */
 }
 
+/* Make footer stay at bottom on short pages */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
 /* About Page Grid */
 .about-grid {
   display: grid;
@@ -448,7 +462,6 @@ body {
   line-height: 1.5;
 }
 
-/* Mobile */
 /* Mobile */
 @media (max-width: 768px) {
   .timeline {
